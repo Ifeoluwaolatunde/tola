@@ -8,7 +8,7 @@ import Emma from './Riri.js';
 
 
 const ProductDetails={
-  title:['Gucci', 'channel' , 'liousvitton'],
+  title:['Gucci', 'channel' , 'liou svitton'],
   productimage:[Tolu, olu ,lolu],     
   description:['light brown bag', 'Gold purse' ,'Silver necklace'],
   price:['$500' ,' $1000' ,'$1500'],
