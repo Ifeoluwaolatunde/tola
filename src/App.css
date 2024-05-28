@@ -1,11 +1,23 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aba{
+  background-color: rgb(3, 3, 59);
+  width: 28%;
 }
+.ada{
+  background-color: yellow;
+  width: 37%;
+}
+.aka{
+  background-color: rgb(3, 3, 59);
+  width: 28%;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,7 +26,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:pink;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,8 +36,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ola{
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes App-logo-spin {
