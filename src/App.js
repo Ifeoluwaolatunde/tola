@@ -6,15 +6,16 @@ import Tolu from './brownbag.jpg';
 import olu from './goldshoe.jpg';
 import lolu from './silver.jpg';
 import {Mady} from './bass';
+import { Kemi } from './kimi';
 
 
 
 
 
 const ProductDetails={
-  title:['Gucci', 'channel' , 'LV'],
+  title:[' Brown bag', 'Gold purse' , 'Silver necklace'],
   productimage:[Tolu, olu ,lolu],     
-  description:['light brown bag', 'Gold purse' ,'Silver necklace'],
+  description:['It is the latest in town', 'fashionable ,elegant' ,'Fancy and beautiful'],
   price:[500 , 1000 ,1500],
 }  
 function App() {
@@ -33,6 +34,7 @@ function App() {
               description={ProductDetails.description[index]}
               price={ProductDetails.price[index]}
             />
+            <Kemi/>
           </div>
         ))}
       </div>
