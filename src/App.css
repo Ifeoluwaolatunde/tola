@@ -1,34 +1,53 @@
+body {
+  background-image: radial-gradient(circle at center, rgb(1, 1, 24), rgb(2, 2, 80));
+  padding-top: 20px;
+  padding: 30px;
+}
+
 .App {
   text-align: center;
+  align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 15px;
   justify-content: space-between;
 }
-
-.aba{
-  background-color: rgb(3, 3, 59);
-  width: 28%;
-}
-.ada{
-  background-color: yellow;
-  width: 37%;
-}
-.aka{
-  background-color: rgb(3, 3, 59);
-  width: 28%;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.ola{
+.ola {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 15px;
 }
+
+
+.aba {
+  align-items: center;
+  background-color: rgb(244, 244, 250);
+  box-shadow: 0px 0px 2px 5px rgba(156, 156, 156, 0.5); /* Corrected RGBA syntax */
+  justify-content: center;
+  border-radius: 10px;
+  height: 40%;
+}
+
+.btn {
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 34);
+}
+.sam{
+  width: 100%;
+  align-items: center;
+  
+}
+
+.ada {
+  background-color: rgb(211, 211, 5); /* Consider adjusting for better contrast */
+}
+
+.aka {
+  background-color: rgb(16, 16, 138); /* Consider adjusting for better contrast */
+}
+
 
 

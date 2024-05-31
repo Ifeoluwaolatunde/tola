@@ -1,58 +1,46 @@
 import './App.css';
-import Tolu from './sisi.png';
-import olu from './goldpurse.jpg';
-import lolu from './silvernecklace.jpg';
-import Emma from './Riri.js';
+import {Victor} from  './Riri'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Bady} from './lola';
+import Tolu from './brownbag.jpg';
+import olu from './goldshoe.jpg';
+import lolu from './silver.jpg';
+import {Mady} from './bass';
+
 
 
 
 
 const ProductDetails={
-  title:['Gucci', 'channel' , 'liou svitton'],
+  title:['Gucci', 'channel' , 'LV'],
   productimage:[Tolu, olu ,lolu],     
   description:['light brown bag', 'Gold purse' ,'Silver necklace'],
-  price:['$500' ,' $1000' ,'$1500'],
+  price:[500 , 1000 ,1500],
 }  
 function App() {
   
-    
+    const tunde=true;
   return (
-  
-    <div className="App col-sm-4">
-     
-      <div className='aba'>
-          <Emma 
-          name={ProductDetails.title[0]} 
-          image={Tolu}
-          description={ProductDetails.description[0]}
-          price={ProductDetails.price[0]}
-          />
-        </div>
-
-      <div className='ada'>
-        <Emma 
-          name={ProductDetails.title[1]}
-          image={ProductDetails.productimage[1]}
-          description={ProductDetails.description[1]} 
-          price={ProductDetails.price[1]}/>
+   
+    <div>
+     <Bady sola={tunde}/>
+      <div className="App ">
+        {ProductDetails.title.map((x, index) => (
+          <div key={index} className='aba col-sm-3'>
+            <Victor
+              name={ProductDetails.title[index]}
+              image={ProductDetails.productimage[index]}
+              description={ProductDetails.description[index]}
+              price={ProductDetails.price[index]}
+            />
+          </div>
+        ))}
       </div>
 
-      <div className='aka'>
-        <Emma
-         name={ProductDetails.title[2]} 
-         image={ProductDetails.productimage[2]}
-         description={ProductDetails.description[2]} 
-         price={ProductDetails.price[2]}/>
-        </div>
+      <Mady/>
+
       
-        {/* <img src={qan} className="App-logo" alt="logo" />
-        <p>
-          you can freely edit ur page
-        </p>
-       <h4>
-          React for you
-          </h4> */}
-  
+     
     </div>
   );
 }
