@@ -35,6 +35,12 @@ body {
   border-radius: 10px;
   height: 40%;
 }
+.nas{
+ background-color:  rgb(2, 2, 80);
+ color: white;
+ font-weight: bolder;
+ border-radius: 10px;
+}
 
 .btn {
   

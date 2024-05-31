@@ -13,19 +13,30 @@ export function Victor(props) {
   const increaseCount = () => {
     setCount(count + 1);
   };
-
+   const[button,setButton]=useState(false)
   
 
   return (
+   <>
     <div className='ola'>
       <img src={props.image} alt={props.name} className='sam' />
       <h2 style={{ fontWeight: 'bolder' }}>{props.name}</h2>
       <h3>{props.description}</h3>
       <h4><strong>${props.price}</strong></h4>
       <p>Discount ${discountPrice}</p>
-      <button onClick={clickHandler} className='btn btn-dark '>Discount </button>
+      <button  className='btn btn-dark '
+         onClick={
+            ()=>{
+            clickHandler()
+            setButton(!button)
+            }
+         }
+      >
+         {button ? 'Buy': 'Discount'}
+      </button>
       <h4>{count}</h4>
-      <button onClick={increaseCount} className='ire'>Quantity to purchase</button>
+      <button onClick={increaseCount} className='btn btn-dark'>Quantity to purchase</button>
     </div>
+    </> 
   );
 }

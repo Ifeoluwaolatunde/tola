@@ -8,7 +8,7 @@ export function Kemi(){
     } 
     return(
         <div>
-        <button onClick={toggle}>Click to know brand</button> {isShown &&<p>Gucci</p>}
+        <button onClick={toggle} className="nas">Click to know brand</button> {isShown &&<p>Gucci</p>}
       </div>
     )
 }
