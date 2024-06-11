@@ -1,9 +1,9 @@
-// import Mami from "./page"
+import Laide from './jessy';
 export function Ariel(){
     return(
         <>
         {/* <Mami/> */}
-          <h3>Hello world</h3>
+        <Laide />
         </>
     )
 }

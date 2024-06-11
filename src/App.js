@@ -2,10 +2,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Bady } from './lola';
 import { Mady } from './bass';
-import Laide from './jessy';
+
 import Rootlayout from './root';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Ariel } from './About';
+import { Femi } from './bash';
 import Errorpage from './error';
 
 
@@ -21,6 +22,7 @@ function App() {
       children: [
         { path: '/', element: <Mady /> },
         { path: '/About', element: <Ariel /> },
+        { path: '/bash', element: <Femi /> },
       ]
     },
   ])
@@ -33,7 +35,7 @@ function App() {
         
 
 
-        <Laide />
+        
 
       </div>
     </>

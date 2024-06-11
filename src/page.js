@@ -6,7 +6,9 @@ export default function Mami(){
         <>
         <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/About'>About</Link></li>
+            <li><Link to='/About'>Form</Link></li>
+            <li><Link to='/bash'>Vision</Link></li>
+
             
 
         </ul>
