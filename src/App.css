@@ -60,6 +60,14 @@ body {
 .aka {
   background-color: rgb(16, 16, 138); /* Consider adjusting for better contrast */
 }
+.josh{
+  margin: 0px auto;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  width: 50%;
+}
 
 
 
