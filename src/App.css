@@ -66,7 +66,32 @@ body {
   text-align: center;
   padding: 10px;
   background-color: white;
+  width: 80%;
+}
+.josh input{
   width: 50%;
+  padding: 7px;
+  border-radius: 5px;
+}
+.josh input:hover{
+  padding: 8px;
+  outline: auto;
+}
+.josh button{
+  background-color: darkblue;
+  color: white;
+  font-weight: bolder;
+  font-family: cursive;
+  padding: 7px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.josh label{
+  font-weight: bolder;
+  font-family: cursive;
+}
+.josh h2{
+  font-family: cursive;
 }
 .baba{
   color: white;
